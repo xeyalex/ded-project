@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Axtarış Nəticələri</title>
+</head>
+<body>
+<h1>Axtarış Nəticələri</h1>
+<ul>
+    <th:block th:each="result : ${results}">
+        <li th:text="${result}"></li>
+    </th:block>
+</ul>
+</body>
+</html>
