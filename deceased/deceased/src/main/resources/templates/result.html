@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>QR Kod Skan Nəticəsi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="mt-5">Nəticə</h1>
+    <p th:text="${message}"></p>
+    <div th:if="${url}">
+        <h2>Mərhumun Şəkil və Videoları</h2>
+        <div>
+            <img th:src="${url}" alt="Şəkil" class="img-fluid">
+        </div>
+    </div>
+</div>
+</body>
+</html>

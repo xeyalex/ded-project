@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>QR Kod Skan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="mt-5">QR Kod Skan</h1>
+    <form method="post" enctype="multipart/form-data" th:action="@{/scan}">
+        <div class="form-group">
+            <label for="file">QR Kod Şəkli Yükləyin:</label>
+            <input type="file" class="form-control" id="file" name="file" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Skan Et</button>
+    </form>
+</div>
+</body>
+</html>
